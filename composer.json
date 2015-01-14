@@ -6,7 +6,8 @@
 	"authors": [
 		{
 			"name": "Mior Muhammad Zaki",
-			"email": "crynobone@gmail.com"
+			"email": "crynobone@gmail.com",
+			"homepage": "https://github.com/crynobone"
 		}
 	],
 	"require": {
@@ -20,7 +21,10 @@
 		}
 	},
 	"extra": {
-		"class": "Orchestra\\ThemeInstaller\\InstallerPlugin"
+		"branch-alias": {
+			"dev-master": "1.0-dev"
+		},
+		"class": "Orchestra\\ThemeInstaller\\InstallerPlugin",
 	},
 	"minimum-stability": "dev"
 }
