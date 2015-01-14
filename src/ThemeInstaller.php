@@ -25,16 +25,6 @@ class ThemeInstaller extends LibraryInstaller
     /**
      * {@inheritdoc}
      */
-    protected function getPackageBasePath(PackageInterface $package)
-    {
-        $path = parent::getPackageBasePath($package);
-
-        return "{$path}/src";
-    }
-
-    /**
-     * {@inheritdoc}
-     */
     public function supports($packageType)
     {
         return in_array($packageType, ['orchestra-theme', 'orchestraplatform-theme']);
