@@ -1,0 +1,25 @@
+{
+	"name": "orchestra/theme-installer",
+	"description": "Theme Installer for Orchestra Platform",
+	"type": "composer-plugin",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Mior Muhammad Zaki",
+			"email": "crynobone@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"composer-plugin-api": "1.0.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Orchestra\\ThemeInstaller\\": "src/"
+		}
+	},
+	"extra": {
+		"class": "Orchestra\\ThemeInstaller\\InstallerPlugin"
+	},
+	"minimum-stability": "dev"
+}
