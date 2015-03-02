@@ -11,6 +11,7 @@ class InstallerPlugin implements PluginInterface
      *
      * @param  \Composer\Composer  $composer
      * @param  \Composer\IO\IOInterface  $io
+     *
      * @return void
      */
     public function activate(Composer $composer, IOInterface $io)
