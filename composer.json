@@ -1,30 +1,30 @@
 {
-	"name": "orchestra/theme-installer",
-	"description": "Theme Installer for Orchestra Platform",
-	"type": "composer-plugin",
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Mior Muhammad Zaki",
-			"email": "crynobone@gmail.com",
-			"homepage": "https://github.com/crynobone"
-		}
-	],
-	"require": {
-		"php": ">=5.4.0",
-		"illuminate/support": "~4.2|~5.0",
-		"composer-plugin-api": "^1.0.0"
-	},
-	"autoload": {
-		"psr-4": {
-			"Orchestra\\ThemeInstaller\\": "src/"
-		}
-	},
-	"extra": {
-		"branch-alias": {
-			"dev-master": "1.0-dev"
-		},
-		"class": "Orchestra\\ThemeInstaller\\InstallerPlugin"
-	},
-	"minimum-stability": "dev"
+    "name": "orchestra/theme-installer",
+    "description": "Theme Installer for Orchestra Platform",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mior Muhammad Zaki",
+            "email": "crynobone@gmail.com",
+            "homepage": "https://github.com/crynobone"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~4.2|~5.0",
+        "composer-plugin-api": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Orchestra\\ThemeInstaller\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "class": "Orchestra\\ThemeInstaller\\InstallerPlugin"
+    },
+    "minimum-stability": "dev"
 }
