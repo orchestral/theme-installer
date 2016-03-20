@@ -1,4 +1,6 @@
-<?php namespace Orchestra\ThemeInstaller;
+<?php
+
+namespace Orchestra\ThemeInstaller;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;

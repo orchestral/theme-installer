@@ -1,4 +1,6 @@
-<?php namespace Orchestra\ThemeInstaller;
+<?php
+
+namespace Orchestra\ThemeInstaller;
 
 use Illuminate\Support\Arr;
 use Composer\Package\PackageInterface;
