@@ -2,7 +2,6 @@
 
 namespace Orchestra\ThemeInstaller;
 
-use Illuminate\Support\Arr;
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
 
@@ -13,7 +12,7 @@ class ThemeInstaller extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        $name = Arr::get($package->getExtra(), 'theme-name');
+        $name = $package->getExtra()['theme-name'] ?? null;
 
         if (is_null($name)) {
             list(, $name) = $package->getPrettyName();
