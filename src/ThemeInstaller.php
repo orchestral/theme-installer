@@ -15,7 +15,7 @@ class ThemeInstaller extends LibraryInstaller
         $name = $package->getExtra()['theme-name'] ?? null;
 
         if (is_null($name)) {
-            list(, $name) = $package->getPrettyName();
+            [, $name] = $package->getPrettyName();
 
             $name = str_replace('-theme', '', $name);
         }
