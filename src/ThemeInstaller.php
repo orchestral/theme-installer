@@ -14,10 +14,10 @@ class ThemeInstaller extends LibraryInstaller
     {
         $name = $package->getExtra()['theme-name'] ?? null;
 
-        if (is_null($name)) {
+        if (\is_null($name)) {
             [, $name] = $package->getPrettyName();
 
-            $name = str_replace('-theme', '', $name);
+            $name = \str_replace('-theme', '', $name);
         }
 
         return 'public/themes/'.$name;
@@ -28,6 +28,6 @@ class ThemeInstaller extends LibraryInstaller
      */
     public function supports($packageType)
     {
-        return in_array($packageType, ['orchestra-theme', 'orchestraplatform-theme']);
+        return \in_array($packageType, ['orchestra-theme', 'orchestraplatform-theme']);
     }
 }
